@@ -24,3 +24,7 @@ fp-info-cache
 # Exported BOM files
 *.xml
 *.csv
+
+# Ignore the misc folder and it's contents
+misc/
+misc/**
