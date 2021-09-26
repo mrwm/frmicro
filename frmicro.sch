@@ -309,7 +309,7 @@ F 3 "" H 7150 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7150 4050 7150 4200
+	7150 4050 7150 4150
 Connection ~ 7150 4050
 $Comp
 L Switch:SW_Push SW1
@@ -356,183 +356,297 @@ D+
 Text GLabel 7050 4650 0    50   Input ~ 0
 D-
 $Comp
-L Connector:USB_C_Plug_USB2.0 P1
-U 1 1 6156FC11
-P 3750 4000
-F 0 "P1" H 3857 4867 50  0000 C CNN
-F 1 "USB_C_Plug_USB2.0" H 3857 4776 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Plug_JAE_DX07P024AJ1" H 3900 4000 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 3900 4000 50  0001 C CNN
-	1    3750 4000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R1
-U 1 1 61578025
-P 4900 3500
-F 0 "R1" V 5096 3500 50  0000 C CNN
-F 1 "5.1k" V 5005 3500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 4900 3500 50  0001 C CNN
-F 3 "~" H 4900 3500 50  0001 C CNN
-	1    4900 3500
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R_Small R2
-U 1 1 61584138
-P 4900 3850
-F 0 "R2" V 4704 3850 50  0000 C CNN
-F 1 "5.1k" V 4795 3850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 4900 3850 50  0001 C CNN
-F 3 "~" H 4900 3850 50  0001 C CNN
-	1    4900 3850
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4350 3600 4800 3600
-Wire Wire Line
-	4800 3600 4800 3500
-Wire Wire Line
-	4350 3700 4800 3700
-Wire Wire Line
-	4800 3700 4800 3850
-$Comp
-L Device:Polyfuse_Small F1
-U 1 1 6159446F
-P 4650 3050
-F 0 "F1" V 4445 3050 50  0000 C CNN
-F 1 "Polyfuse_Small" V 4536 3050 50  0000 C CNN
-F 2 "Fuse:Fuse_0805_2012Metric" H 4700 2850 50  0001 L CNN
-F 3 "~" H 4650 3050 50  0001 C CNN
-	1    4650 3050
-	0    1    1    0   
-$EndComp
-$Comp
-L power:+5V #PWR01
-U 1 1 615968BB
-P 5050 3050
-F 0 "#PWR01" H 5050 2900 50  0001 C CNN
-F 1 "+5V" V 5065 3178 50  0000 L CNN
-F 2 "" H 5050 3050 50  0001 C CNN
-F 3 "" H 5050 3050 50  0001 C CNN
-	1    5050 3050
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5050 3050 4750 3050
-Wire Wire Line
-	4350 3050 4350 3400
-Wire Wire Line
-	4550 3050 4350 3050
-Text GLabel 4350 4100 2    50   Input ~ 0
-D+
-Text GLabel 4350 3900 2    50   Input ~ 0
-D-
-Wire Wire Line
-	5000 3500 5100 3500
-Wire Wire Line
-	5100 3500 5100 3850
-Wire Wire Line
-	5100 4900 3750 4900
-Wire Wire Line
-	5000 3850 5100 3850
-Connection ~ 5100 3850
-Wire Wire Line
-	5100 3850 5100 4900
-$Comp
 L Connector:USB_C_Plug P2
 U 1 1 615B98A9
-P 3750 7250
-F 0 "P2" H 3857 8517 50  0000 C CNN
-F 1 "USB_C_Plug" H 3857 8426 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Plug_JAE_DX07P024AJ1" H 3900 7250 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 3900 7250 50  0001 C CNN
-	1    3750 7250
+P 3800 4700
+F 0 "P2" H 3907 5967 50  0000 C CNN
+F 1 "USB_C_Plug" H 3907 5876 50  0000 C CNN
+F 2 "misc:GCT_USB4155-03-C_REVA" H 3950 4700 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 3950 4700 50  0001 C CNN
+	1    3800 4700
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Polyfuse_Small F2
 U 1 1 615BD138
-P 4750 6100
-F 0 "F2" V 4545 6100 50  0000 C CNN
-F 1 "Polyfuse_Small" V 4636 6100 50  0000 C CNN
-F 2 "Fuse:Fuse_0805_2012Metric" H 4800 5900 50  0001 L CNN
-F 3 "~" H 4750 6100 50  0001 C CNN
-	1    4750 6100
+P 4800 3550
+F 0 "F2" V 4595 3550 50  0000 C CNN
+F 1 "Polyfuse_Small" V 4686 3550 50  0000 C CNN
+F 2 "Fuse:Fuse_0805_2012Metric" H 4850 3350 50  0001 L CNN
+F 3 "~" H 4800 3550 50  0001 C CNN
+	1    4800 3550
 	0    1    1    0   
 $EndComp
 $Comp
 L power:+5V #PWR011
 U 1 1 615BDB31
-P 5050 6100
-F 0 "#PWR011" H 5050 5950 50  0001 C CNN
-F 1 "+5V" V 5065 6228 50  0000 L CNN
-F 2 "" H 5050 6100 50  0001 C CNN
-F 3 "" H 5050 6100 50  0001 C CNN
-	1    5050 6100
+P 5100 3550
+F 0 "#PWR011" H 5100 3400 50  0001 C CNN
+F 1 "+5V" V 5115 3678 50  0000 L CNN
+F 2 "" H 5100 3550 50  0001 C CNN
+F 3 "" H 5100 3550 50  0001 C CNN
+	1    5100 3550
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4350 6250 4350 6100
+	4400 3700 4400 3550
 Wire Wire Line
-	4350 6100 4650 6100
+	4400 3550 4700 3550
 Wire Wire Line
-	4850 6100 5050 6100
+	4900 3550 5100 3550
 $Comp
 L Device:R_Small R7
 U 1 1 615BF709
-P 4750 6450
-F 0 "R7" V 4946 6450 50  0000 C CNN
-F 1 "5.1k" V 4855 6450 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 4750 6450 50  0001 C CNN
-F 3 "~" H 4750 6450 50  0001 C CNN
-	1    4750 6450
+P 4800 3900
+F 0 "R7" V 4996 3900 50  0000 C CNN
+F 1 "5.1k" V 4905 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4800 3900 50  0001 C CNN
+F 3 "~" H 4800 3900 50  0001 C CNN
+	1    4800 3900
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R8
 U 1 1 615BFC60
-P 4750 6800
-F 0 "R8" V 4554 6800 50  0000 C CNN
-F 1 "5.1k" V 4645 6800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" H 4750 6800 50  0001 C CNN
-F 3 "~" H 4750 6800 50  0001 C CNN
-	1    4750 6800
+P 4800 4250
+F 0 "R8" V 4604 4250 50  0000 C CNN
+F 1 "5.1k" V 4695 4250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 4800 4250 50  0001 C CNN
+F 3 "~" H 4800 4250 50  0001 C CNN
+	1    4800 4250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4350 6450 4650 6450
+	4400 3900 4700 3900
 Wire Wire Line
-	5050 6450 5050 6800
+	5100 3900 5100 4250
 Wire Wire Line
-	5050 8850 3750 8850
+	5100 6300 3800 6300
 Wire Wire Line
-	4850 6450 5050 6450
+	4900 3900 5100 3900
 Wire Wire Line
-	4350 6550 4650 6550
+	4400 4000 4700 4000
 Wire Wire Line
-	4650 6550 4650 6800
+	4700 4000 4700 4250
 Wire Wire Line
-	5050 6800 4850 6800
-Connection ~ 5050 6800
+	5100 4250 4900 4250
+Connection ~ 5100 4250
 Wire Wire Line
-	5050 6800 5050 8850
-Text GLabel 4350 6750 2    50   Input ~ 0
+	5100 4250 5100 6300
+Text GLabel 4400 4200 2    50   Input ~ 0
 D-
-Text GLabel 4350 6950 2    50   Input ~ 0
+Text GLabel 4400 4400 2    50   Input ~ 0
 D+
-NoConn ~ 4350 7250
-NoConn ~ 4350 7350
-NoConn ~ 4350 7550
-NoConn ~ 4350 7650
-NoConn ~ 4350 7850
-NoConn ~ 4350 7950
-NoConn ~ 4350 8150
-NoConn ~ 4350 8250
-NoConn ~ 4350 8450
-NoConn ~ 4350 8550
-Text Notes 3350 5750 0    50   ~ 0
+NoConn ~ 4400 4700
+NoConn ~ 4400 4800
+NoConn ~ 4400 5000
+NoConn ~ 4400 5100
+NoConn ~ 4400 5300
+NoConn ~ 4400 5400
+NoConn ~ 4400 5600
+NoConn ~ 4400 5700
+NoConn ~ 4400 5900
+NoConn ~ 4400 6000
+Text Notes 3400 3200 0    50   ~ 0
 Alternative USB-C connector
-Text Notes 3350 2800 0    50   ~ 0
-USB-C 2.0 connector
+$Comp
+L power:GND #PWR0102
+U 1 1 6168F35D
+P 5100 6300
+F 0 "#PWR0102" H 5100 6050 50  0001 C CNN
+F 1 "GND" H 5105 6127 50  0000 C CNN
+F 2 "" H 5100 6300 50  0001 C CNN
+F 3 "" H 5100 6300 50  0001 C CNN
+	1    5100 6300
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5100 6300
+$Comp
+L power:+5V #PWR0101
+U 1 1 616A66D2
+P 8450 3050
+F 0 "#PWR0101" H 8450 2900 50  0001 C CNN
+F 1 "+5V" H 8465 3223 50  0000 C CNN
+F 2 "" H 8450 3050 50  0001 C CNN
+F 3 "" H 8450 3050 50  0001 C CNN
+	1    8450 3050
+	1    0    0    -1  
+$EndComp
+Text Label 7250 4550 0    50   ~ 0
+D+
+Text Label 7150 4650 0    50   ~ 0
+D-
+Text Label 8300 4550 0    50   ~ 0
+Dline+
+Text Label 8250 4650 0    50   ~ 0
+Dline-
+Wire Wire Line
+	7650 3850 7650 4150
+Wire Wire Line
+	7650 4150 7450 4150
+Connection ~ 7150 4150
+Wire Wire Line
+	7150 4150 7150 4200
+Wire Wire Line
+	7450 3850 7450 4150
+Connection ~ 7450 4150
+Wire Wire Line
+	7450 4150 7150 4150
+$Comp
+L Connector:Conn_01x12_Female J2
+U 1 1 61706850
+P 14400 4500
+F 0 "J2" H 14292 3675 50  0000 C CNN
+F 1 "Conn_01x12_Female" H 14292 3766 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 14400 4500 50  0001 C CNN
+F 3 "~" H 14400 4500 50  0001 C CNN
+	1    14400 4500
+	-1   0    0    1   
+$EndComp
+Text GLabel 14650 4000 2    50   Input ~ 0
+GND
+Text GLabel 14650 4100 2    50   Input ~ 0
+RST
+Text GLabel 14650 4200 2    50   Input ~ 0
+VCC
+Text GLabel 14650 4300 2    50   Input ~ 0
+F4
+Text GLabel 14650 4400 2    50   Input ~ 0
+F5
+Text GLabel 14650 4500 2    50   Input ~ 0
+F6
+Text GLabel 14650 4600 2    50   Input ~ 0
+F7
+Text GLabel 14650 4700 2    50   Input ~ 0
+B1
+Text GLabel 14650 4800 2    50   Input ~ 0
+B3
+Text GLabel 14650 4900 2    50   Input ~ 0
+B2
+Text GLabel 14650 5000 2    50   Input ~ 0
+B6
+Text GLabel 9800 5050 2    50   Input ~ 0
+D3
+Text GLabel 9800 4950 2    50   Input ~ 0
+D2
+Text GLabel 8550 6850 0    50   Input ~ 0
+GND
+Wire Wire Line
+	8550 6850 8700 6850
+Connection ~ 8700 6850
+Text GLabel 9800 4850 2    50   Input ~ 0
+D1
+Text GLabel 9800 4750 2    50   Input ~ 0
+D0
+Text GLabel 9800 5150 2    50   Input ~ 0
+D4
+Text GLabel 9800 4450 2    50   Input ~ 0
+C6
+Text GLabel 9800 5450 2    50   Input ~ 0
+D7
+Text GLabel 9800 5750 2    50   Input ~ 0
+E6
+Text GLabel 9800 3950 2    50   Input ~ 0
+B4
+Text GLabel 9800 4050 2    50   Input ~ 0
+B5
+Text GLabel 9100 3050 2    50   Input ~ 0
+VCC
+Text GLabel 9800 6150 2    50   Input ~ 0
+F4
+Text GLabel 9800 6250 2    50   Input ~ 0
+F5
+Text GLabel 9800 6450 2    50   Input ~ 0
+F7
+Text GLabel 9800 6350 2    50   Input ~ 0
+F6
+Text GLabel 9800 3650 2    50   Input ~ 0
+B1
+Text GLabel 9800 3750 2    50   Input ~ 0
+B2
+Text GLabel 9800 3850 2    50   Input ~ 0
+B3
+Text GLabel 9800 4150 2    50   Input ~ 0
+B6
+Text GLabel 13300 5000 0    50   Input ~ 0
+B5
+Text GLabel 13300 4900 0    50   Input ~ 0
+B4
+Text GLabel 13300 4800 0    50   Input ~ 0
+E6
+Text GLabel 13300 4700 0    50   Input ~ 0
+D7
+Text GLabel 13300 4600 0    50   Input ~ 0
+C6
+Text GLabel 13300 4500 0    50   Input ~ 0
+D4
+Text GLabel 13300 4400 0    50   Input ~ 0
+D0
+Text GLabel 13300 4300 0    50   Input ~ 0
+D1
+Text GLabel 13300 4200 0    50   Input ~ 0
+GND
+Text GLabel 13300 4100 0    50   Input ~ 0
+GND
+Text GLabel 13300 4000 0    50   Input ~ 0
+D2
+Text GLabel 13300 3900 0    50   Input ~ 0
+D3
+$Comp
+L Connector:Conn_01x12_Female J1
+U 1 1 6170255A
+P 13550 4400
+F 0 "J1" H 13578 4376 50  0000 L CNN
+F 1 "Conn_01x12_Female" H 13578 4285 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x12_P2.54mm_Vertical" H 13550 4400 50  0001 C CNN
+F 3 "~" H 13550 4400 50  0001 C CNN
+	1    13550 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	13300 3900 13350 3900
+Wire Wire Line
+	13350 4000 13300 4000
+Wire Wire Line
+	13300 4100 13350 4100
+Wire Wire Line
+	13350 4200 13300 4200
+Wire Wire Line
+	13300 4300 13350 4300
+Wire Wire Line
+	13350 4400 13300 4400
+Wire Wire Line
+	13300 4500 13350 4500
+Wire Wire Line
+	13350 4600 13300 4600
+Wire Wire Line
+	13300 4700 13350 4700
+Wire Wire Line
+	13350 4800 13300 4800
+Wire Wire Line
+	13300 4900 13350 4900
+Wire Wire Line
+	13350 5000 13300 5000
+Wire Wire Line
+	14650 4000 14600 4000
+Wire Wire Line
+	14600 4100 14650 4100
+Wire Wire Line
+	14650 4200 14600 4200
+Wire Wire Line
+	14600 4300 14650 4300
+Wire Wire Line
+	14650 4400 14600 4400
+Wire Wire Line
+	14600 4500 14650 4500
+Wire Wire Line
+	14650 4600 14600 4600
+Wire Wire Line
+	14600 4700 14650 4700
+Wire Wire Line
+	14650 4800 14600 4800
+Wire Wire Line
+	14600 4900 14650 4900
+Wire Wire Line
+	14650 5000 14600 5000
 $EndSCHEMATC
